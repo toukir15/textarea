@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script
+      src="https://kit.fontawesome.com/39749765a9.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body id="full__body">
+    <section class="h-screen bg-red-400">
+      <div class="w-3/4 h-3/4 mx-auto bg-yellow-400 flex flex-col items-center">
+        <div>
+          <h1 class="text-center w-full text-4xl font-bold my-5">
+            My text editor
+          </h1>
+        </div>
+        <div class="bg-green-500 border-2 border-slate-900">
+          <div class="flex justify-around items-center mt-10">
+            <!-- left btn  -->
+            <div>
+              <button id="bold__btn" class="mr-4">
+                <i class="fa-solid fa-bold"></i>
+              </button>
+              <button id="italic__btn" class="mr-4">
+                <i class="fa-solid fa-italic"></i>
+              </button>
+              <button id="underline__btn" class="mr-4">
+                <i class="fa-solid fa-underline"></i>
+              </button>
+            </div>
+            <!-- middle btn  -->
+            <div>
+              <button id="left__btn" class="mr-4">
+                <i class="fa-solid fa-align-left"></i>
+              </button>
+              <button id="middle__btn" class="mr-4">
+                <i class="fa-solid fa-align-center"></i>
+              </button>
+              <button id="right__btn" class="mr-4">
+                <i class="fa-solid fa-align-right"></i>
+              </button>
+            </div>
+            <!-- right btn  -->
+            <div>
+              <button id="number__btn" class="mr-4">44</button>
+              <button id="" class="mr-4">aA</button>
+              <input
+                onblur="getInputColor()"
+                class="mr-4"
+                type="color"
+                id="favcolor"
+                name="favcolor"
+                value="#ff0000"
+              />
+            </div>
+          </div>
+          <!-- textarea  -->
+          <div class="mt-10 border-2 border-neutral-600 w-3/4 mx-auto mb-4">
+            <textarea
+              class="mx-auto w-full"
+              name=""
+              id="textarea__field"
+              cols="120"
+              rows="14"
+            ></textarea>
+          </div>
+        </div>
+      </div>
+    </section>
+    <script src="textarea.js"></script>
+  </body>
+</html>
